@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Souls-like Combat Prototype | Adhvaith Bonaili</title>
+<meta name="description" content="Enemy AI, animation blueprints, and a hand-sculpted stormy-cliff arena in Unreal Engine 5, built toward a boss encounter.">
+<meta name="theme-color" content="#07161b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script>document.documentElement.className += " js";</script>
+</head>
+<body data-root="../" class="theme-night">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Adhvaith <span>Bonaili</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="pills">Menu</button>
+    <ul class="pills" id="pills">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="arena-shooter.html">Arena Shooter</a></li>
+      <li><a href="souls-like.html" aria-current="page">Souls-like</a></li>
+      <li><a href="../index.html#gallery">Gallery</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+<header class="proj-hero">
+  <div class="bg"><img src="../assets/img/souls/souls-hero.jpg" alt=""></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="../index.html#work">&larr; All work</a></div>
+    <h1>Souls-like Combat Prototype<span class="status">In progress</span></h1>
+    <p class="lead">Enemy AI, animation blueprints, and a hand-sculpted stormy-cliff arena in Unreal Engine 5, built toward a boss encounter.</p>
+    <dl class="meta"><div><dt>Role</dt><dd>Designer &amp; developer</dd></div><div><dt>Engine</dt><dd>Unreal Engine 5, Blueprints, Niagara</dd></div><div><dt>Timeline</dt><dd>Jun. 2026 &ndash; present</dd></div><div><dt>Focus</dt><dd>Enemy AI, animation, environment</dd></div></dl>
+  </div>
+</header>
+
+<div class="tabbar">
+  <div class="wrap">
+    <div class="tabs" role="tablist" aria-label="Project sections">
+      <button class="tab" role="tab" id="tab-character" aria-controls="character" aria-selected="true">Character</button>
+      <button class="tab" role="tab" id="tab-environment" aria-controls="environment" aria-selected="false">Environment</button>
+      <button class="tab" role="tab" id="tab-gameplay" aria-controls="gameplay" aria-selected="false">Gameplay</button>
+      <button class="tab" role="tab" id="tab-technical" aria-controls="technical" aria-selected="false">Technical overview</button>
+    </div>
+  </div>
+</div>
+
+<div class="wrap panel-wrap">
+
+  <section class="tabpanel" id="character" role="tabpanel" aria-labelledby="tab-character" data-lbgroup>
+    <div class="intro">
+      <h2>Enemies and animation</h2>
+      <p>Melee and mage enemy archetypes and their dynamic behavior, plus the animation setup for the player and enemies: my own locomotion and attack animation sets, retargeted from Mixamo to the UE5 Manny skeleton using the UE5 retargeter.</p>
+    </div>
+    <div class="grid2">
+      <div class="media " data-src="assets/img/souls/souls-enemies.jpg" data-label="Enemy lineup" data-caption="A large enemy model in the test level" data-lightbox></div>
+      <div class="media " data-src="assets/img/souls/souls-anim-assets.jpg" data-label="Retargeted animations &amp; montages" data-caption="Mixamo animations retargeted to UE5 Manny along with custom montages" data-lightbox></div>
+      <div class="media" data-src="assets/video/souls-ranged-enemy.mp4" data-poster="assets/img/posters/souls-ranged-enemy.jpg" data-label="Ranged enemy" data-caption="Ranged enemy" data-ratio="16:9"></div>
+      <div class="media" data-src="assets/video/souls-player.mp4" data-poster="assets/img/posters/souls-player.jpg" data-label="Player movement and animation" data-caption="Player movement and animation" data-ratio="16:9"></div>
+      <div class="media " data-src="assets/img/souls/souls-abp-armed.jpg" data-label="Armed animation blueprint" data-caption="ABP_Armed AnimGraph with locomotion, Control Rig, and layered pose blending" data-lightbox></div>
+      <div class="media " data-src="assets/img/souls/souls-abp-unarmed.jpg" data-label="Unarmed animation blueprint" data-caption="ABP_Unarmed AnimGraph state machine and blend logic" data-lightbox></div>
+    </div>
+  </section>
+
+  <section class="tabpanel" id="environment" role="tabpanel" aria-labelledby="tab-environment" data-lbgroup>
+    <div class="intro">
+      <h2>Thunder Mountains</h2>
+      <p>A large open stage on a stormy cliff, sculpted and textured by hand, with volumetric fog, dynamic weather, and Niagara rain. Once the project is completed, this will be the arena for a Souls-like boss themed around storms and thunder.</p>
+    </div>
+    <div class="grid2">
+      <div class="media full" data-src="assets/img/souls/souls-cliff-arena.jpg" data-label="Arena hero shot" data-caption="The arena at night, ringed by jagged rock and fog" data-ratio="16:9" data-lightbox></div>
+      <div class="media " data-src="assets/img/souls/souls-landscape.jpg" data-label="Landscape sculpt" data-caption="The sculpted basin from above" data-lightbox></div>
+      <!-- <div class="media " data-src="assets/img/souls/souls-weather.jpg" data-label="Weather" data-caption="Rain and Niagara effects on the arena stage" data-lightbox></div> -->
+      <div class="media" data-src="assets/video/souls-niagara_rain-volumetrc_thunder.mp4" data-poster="assets/img/souls/souls-weather.jpg" data-label="Niagara rain and volumetric skysphere" data-caption="Niagara rain and volumetric skysphere" data-ratio="16:9"></div>
+      <div class="media full" data-src="assets/img/souls/souls-fog.jpg" data-label="Volumetric fog" data-caption="Volumetric fog on the central stage" data-ratio="21:9" data-lightbox></div>
+    </div>
+  </section>
+
+  <section class="tabpanel" id="gameplay" role="tabpanel" aria-labelledby="tab-gameplay" data-lbgroup>
+    <div class="intro">
+      <h2>Enemies that notice, decide, and act</h2>
+      <p>Enemies detect the player by sight, sound, and damage, then choose an action with decision-tree and pathing logic. Attack triggers and animation montages are my own.</p>
+    </div>
+    <div class="grid2">
+      <div class="media full" data-src="assets/video/souls-chain-attack-hit-effects.mp4" data-poster="assets/img/posters/souls-chain-attack-hit-effects.jpg" data-label="Chain attacks and hit effects" data-caption="Chain attacks and hit effects" data-ratio="16:9"></div>
+      <div class="media" data-src="assets/video/souls-attack-sense.mp4" data-poster="assets/img/posters/souls-attack-sense.jpg" data-label="Enemy attack and sense" data-caption="Enemy attack and sense" data-ratio="16:9"></div>
+      <div class="media" data-src="assets/video/souls-sound-enemy-attacks.mp4" data-poster="assets/img/posters/souls-sound-enemy-attacks.jpg" data-label="Sound detection and enemy attacks" data-caption="Enemy hears a sound, then attacks" data-ratio="16:9"></div>
+      <div class="media" data-src="assets/video/souls-enemy-path-sight-death.mp4" data-poster="assets/img/posters/souls-enemy-path-sight-death.jpg" data-label="Enemy pathing, sight, and death" data-caption="Enemy pathing, sight, and death" data-ratio="16:9"></div>
+      <div class="media" data-src="assets/video/souls-block-forget.mp4" data-poster="assets/img/posters/souls-block-forget.jpg" data-label="Blocking and enemy forget behavior" data-caption="Blocking and enemy forget behavior" data-ratio="16:9"></div>
+      <div class="media " data-src="assets/img/souls/souls-ai-debug.jpg" data-label="AI test arena" data-caption="The test arena from above, with enemy collision capsules visible" data-lightbox></div>
+      <div class="media " data-src="assets/img/souls/souls-bt-combat.jpg" data-label="Combat behavior tree &amp; blackboard" data-caption="Behavior tree combat sequence, distance checks, and blackboard keys" data-lightbox></div>
+      <div class="media " data-src="assets/img/souls/souls-bt-enemy.jpg" data-label="Enemy AI behavior tree" data-caption="Enemy behavior tree state branches, attack tasks, and blackboard setup" data-lightbox></div>
+    </div>
+  </section>
+
+  <section class="tabpanel" id="technical" role="tabpanel" aria-labelledby="tab-technical">
+    <div class="doc">
+      <h3>Overview</h3>
+      <p>The Souls-like prototype is a work in progress building toward a boss encounter. So far it covers enemy AI, animation, and a finished arena.</p>
+      <p>The goal of this project is to create a polished Souls-like boss fight inspired by Dark Souls III's Nameless King. Working through the AI and player systems has allowed me to build strong familiarity with UE5 AI tools and animation workflows—the two most critical pillars of a memorable boss encounter. I chose this as a long-term project because video game AI has always fascinated me, and Soulsborne boss fights are a standout example of pairing expressive animations with dynamic decision logic to create a challenging, rewarding experience.</p>
+
+      <h3>Systems I built</h3>
+      <ul><li>Melee and mage enemy archetypes with multiple attacks based on player interactions</li><li>Sight, sound, and damage perception for enemies, including target-forgetting behavior</li><li>Decision-tree and pathing logic</li><li>Attack triggers and attack animations</li><li>Animation blueprints with custom attack sets</li><li>Volumetric fog, dynamic weather, Niagara particle systems, and rain</li></ul>
+
+      <h3>Design decisions</h3>
+      <div class="decisions">
+<div class="decision"><h4>Enemy perception and decision logic</h4><dl>
+<dt>Decision</dt><dd>Implemented a multi-sense perception setup combining sight, sound, and damage stimuli.</dd>
+<dt>Why</dt><dd>Pairing dynamic enemy reactions with patrol routes required enemies to respond to more than just visual contact. Sight and damage are expected, but tying sound events to specific animations and player actions forces the player to stay mindful of their movement and timing, not just line of sight.</dd>
+<dt>Tradeoffs</dt><dd>Currently, when a single stimulus triggers, the enemy moves directly to that stimulus location. Next, I plan to integrate UE5's Environment Query System (EQS) to build a proper investigation state where enemies actively search the surrounding area.</dd></dl></div>
+<div class="decision"><h4>Arena scale and mood</h4><dl>
+<dt>Decision</dt><dd>Established a dark, stormy atmosphere for the environment.</dd>
+<dt>Why</dt><dd>The main challenge was tuning the skysphere and UE5 volumetric cloud systems so lightning flashes convincingly through the storm clouds.</dd>
+<dt>Tradeoffs</dt><dd>To fully tie the environment into the Storm King boss theme, the final step is adding damaging lightning strikes via Niagara particle systems so the weather interacts directly with the player during combat.</dd></dl></div>
+</div>
+
+      <h3>What I built vs. what I adapted</h3>
+      <div class="split">
+        <div class="panel"><h3>Foundation</h3><ul><li>A tutorial series covering the base enemy AI framework</li></ul></div>
+        <div class="panel"><h3>My own work</h3><ul><li>Attack triggers and attack animations for melee and mage enemies</li><li>Animation blueprints with my own locomotion and attack animation sets</li><li>Mixamo animations retargeted to the UE5 Manny skeleton</li><li>Arena sculpted and textured by hand</li><li>Volumetric fog, dynamic weather, and Niagara rain</li></ul></div>
+      </div>
+      <h3>Roadmap</h3>
+      <p>Next up is finishing the core AI systems, adding lock-on and strafe movement, expanding attack variations, and fixing a bug with the enemy leap attack—followed by building the boss encounter by reusing the combat framework with a tuned blackboard and behavior tree.</p>
+
+      <h3>Design document</h3>
+      <p>In progress — full write-up and diagrams coming soon.</p>
+      <!-- Uncomment once the PDF is ready:
+      <p><a class="btn" href="../assets/docs/souls-like-design-doc.pdf" data-doc>Download design doc (PDF)</a></p>
+      -->
+    </div>
+  </section>
+
+  <div class="next">
+    <div><p class="kicker">Next project</p><h3>Arena Shooter</h3></div>
+    <div class="btn-row"><a class="btn" href="arena-shooter.html">View project &rarr;</a><a class="btn ghost" href="../index.html#gallery">Back to gallery</a></div>
+  </div>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year">2026</span> Adhvaith Bonaili</span>
+    <ul>
+      <li><a href="https://github.com/Frosty-Knight?tab=repositories" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/adhvaith-bonaili-78b036336/" rel="noopener">LinkedIn</a></li>
+      <li><a href="../assets/Adhvaith_Bonaili_Resume_V3.pdf" data-doc>Resume (PDF)</a></li>
+    </ul>
+  </div>
+</footer>
+
+<dialog class="lb" id="lb" aria-label="Image viewer">
+  <div class="lb-inner">
+    <div class="lb-stage"></div>
+    <div class="lb-cap"></div>
+  </div>
+  <button class="x" aria-label="Close">&#10005;</button>
+  <button class="prev" aria-label="Previous">&#8592;</button>
+  <button class="next-b" aria-label="Next">&#8594;</button>
+</dialog>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adhvaith Bonaili | Game Developer Portfolio</title>
+<meta name="description" content="Portfolio of Adhvaith Bonaili: gameplay, enemy AI, and environment work in Unreal Engine.">
+<meta name="theme-color" content="#07161b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.className += " js";</script>
+</head>
+<body id="top" data-root="">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Adhvaith <span>Bonaili</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="pills">Menu</button>
+    <ul class="pills" id="pills">
+      <li><a href="#top" aria-current="page" data-section="top">Home</a></li>
+      <li><a href="projects/arena-shooter.html">Arena Shooter</a></li>
+      <li><a href="projects/souls-like.html">Souls-like</a></li>
+      <li><a href="#gallery" data-section="gallery">Gallery</a></li>
+      <li><a href="#about" data-section="about">About</a></li>
+      <li><a href="#contact" data-section="contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" aria-label="Introduction">
+  <div class="hero-media"><img src="assets/img/arena/arena-overview-wide.jpg" alt="Overhead view of a ruined temple arena on an island in a mountain-ringed lake" fetchpriority="high"></div>
+  <canvas id="motes" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="hero-card">
+      <p class="kicker">Game developer &middot; Georgia Tech</p>
+      <h1>Adhvaith Bonaili</h1>
+      <p class="tag">Gameplay, enemy behavior, and environment building in Unreal Engine.</p>
+      <p class="sub">Computational Media (Intelligence &amp; Games) &middot; graduating Fall 2027 &middot; looking for a Summer 2027 game development internship.</p>
+      <div class="btn-row">
+        <a class="btn" href="#work">See my work &darr;</a>
+        <a class="btn ghost" href="assets/Adhvaith_Bonaili_Resume_V3.pdf" data-doc>Resume (PDF)</a>
+        <a class="btn ghost" href="https://github.com/Frosty-Knight?tab=repositories" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/adhvaith-bonaili-78b036336/" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-label">Arena Shooter<br>Unreal Engine 5</div>
+</section>
+
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section-head reveal"><h2>Featured projects</h2><p>Two projects, each with character, environment, gameplay, and a technical breakdown.</p></div>
+    <div class="cards">
+      <a class="card reveal" href="projects/arena-shooter.html">
+        <div class="media " data-src="assets/img/arena/arena-overview-close.jpg" data-label="Arena Shooter preview" data-hover-src="assets/video/arena-shooter-preview.mp4" data-eager></div>
+        <div class="card-body">
+          <span class="cat">Level design &middot; Gameplay</span>
+          <h3>Arena Shooter</h3>
+          <p>A solo Unreal Engine 5 arena shooter: a dynamic arena with multiple spawn points, elevator mechanics, and cover designed around different weapons.</p>
+          <ul class="tags"><li>Unreal Engine 5</li><li>Blueprints</li><li>Level design</li><li>Enemy waves</li></ul>
+          <span class="go">See the breakdown &rarr;</span>
+        </div>
+      </a>
+      <a class="card reveal" href="projects/souls-like.html">
+        <span class="badge">In progress</span>
+        <div class="media " data-src="assets/img/souls/souls-hero.jpg" data-label="Souls-like screenshot or clip" data-hover-src="assets/video/souls-like-preview.mp4"></div>
+        <div class="card-body">
+          <span class="cat">Gameplay &middot; AI &middot; Environment</span>
+          <h3>Souls-like Combat Prototype</h3>
+          <p>Enemy AI, animation blueprints, and a hand-sculpted stormy-cliff arena, built toward a boss encounter.</p>
+          <ul class="tags"><li>Unreal Engine 5</li><li>Blueprints</li><li>Niagara</li><li>Enemy AI</li></ul>
+          <span class="go">See the breakdown &rarr;</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal"><h2>Gallery</h2><p>Environments, characters, and gameplay. Click any image to enlarge.</p></div>
+    <div class="chips reveal" role="group" aria-label="Filter gallery">
+      <button class="chip" data-filter="all" aria-pressed="true">All</button>
+      <button class="chip" data-filter="environment" aria-pressed="false">Environment</button>
+      <button class="chip" data-filter="character" aria-pressed="false">Character</button>
+      <button class="chip" data-filter="gameplay" aria-pressed="false">Gameplay</button>
+    </div>
+    <!-- To add a tile: copy one <div class="tile ..."> block, change data-cat, data-src and the label. -->
+    <div class="gallery reveal" data-lbgroup>
+      <div class="tile big" data-cat="environment">
+        <div class="media " data-src="assets/img/arena/arena-overview-wide-thumb.jpg" data-label="Arena overview" data-caption="Arena Shooter: the full arena from above" data-lightbox data-full="assets/img/arena/arena-overview-wide.jpg"></div>
+        <span class="label">Arena Shooter &middot; Environment</span>
+      </div>
+      <div class="tile" data-cat="environment">
+        <div class="media " data-src="assets/img/arena/arena-overview-close-thumb.jpg" data-label="Arena close-up" data-caption="Arena Shooter: ruins and bridges from above" data-lightbox data-full="assets/img/arena/arena-overview-close.jpg"></div>
+        <span class="label">Arena Shooter &middot; Environment</span>
+      </div>
+      <div class="tile wide" data-cat="gameplay">
+        <div class="media " data-src="assets/img/arena/arena-gameplay-fps-thumb.jpg" data-label="Gameplay" data-caption="Arena Shooter: first-person view during play" data-lightbox data-full="assets/img/arena/arena-gameplay-fps.jpg"></div>
+        <span class="label">Arena Shooter &middot; Gameplay</span>
+      </div>
+      <div class="tile" data-cat="gameplay">
+        <div class="media " data-src="assets/img/arena/arena-elevators-thumb.jpg" data-label="Arena elevators" data-caption="Arena Shooter: an elevator pad, with an enemy in its Searching state" data-lightbox data-full="assets/img/arena/arena-elevators.jpg"></div>
+        <span class="label">Arena Shooter &middot; Level design</span>
+      </div>
+      <div class="tile" data-cat="environment">
+        <div class="media " data-src="assets/img/arena/arena-ground-level-thumb.jpg" data-label="Ground level" data-caption="Arena Shooter: ground-level cover and the arched bridge" data-lightbox data-full="assets/img/arena/arena-ground-level.jpg"></div>
+        <span class="label">Arena Shooter &middot; Environment</span>
+      </div>
+      <div class="tile" data-cat="environment">
+        <div class="media " data-src="assets/img/arena/arena-statue-courtyard-thumb.jpg" data-label="Courtyard" data-caption="Arena Shooter: the central statue courtyard" data-lightbox data-full="assets/img/arena/arena-statue-courtyard.jpg"></div>
+        <span class="label">Arena Shooter &middot; Environment</span>
+      </div>
+      <div class="tile wide" data-cat="environment">
+        <div class="media " data-src="assets/img/souls/souls-cliff-arena-thumb.jpg" data-label="Souls-like arena" data-caption="Souls-like: the arena at night, ringed by jagged rock and fog" data-lightbox data-full="assets/img/souls/souls-cliff-arena.jpg"></div>
+        <span class="label">Souls-like &middot; Environment</span>
+      </div>
+      <div class="tile" data-cat="environment">
+        <div class="media " data-src="assets/img/souls/souls-weather-thumb.jpg" data-label="Souls-like rain" data-caption="Souls-like: rain falling on the arena stage" data-lightbox data-full="assets/img/souls/souls-weather.jpg"></div>
+        <span class="label">Souls-like &middot; Environment</span>
+      </div>
+      <div class="tile" data-cat="environment">
+        <div class="media " data-src="assets/img/souls/souls-landscape-thumb.jpg" data-label="Souls-like basin" data-caption="Souls-like: the sculpted basin from above" data-lightbox data-full="assets/img/souls/souls-landscape.jpg"></div>
+        <span class="label">Souls-like &middot; Environment</span>
+      </div>
+      <div class="tile" data-cat="character">
+        <div class="media " data-src="assets/img/souls/souls-enemies-thumb.jpg" data-label="Souls-like enemy" data-caption="Souls-like: a large enemy model in the test level" data-lightbox data-full="assets/img/souls/souls-enemies.jpg"></div>
+        <span class="label">Souls-like &middot; Character</span>
+      </div>
+      <div class="tile" data-cat="character">
+        <div class="media " data-src="assets/img/souls/souls-dash-vfx.jpg" data-label="Character ability VFX" data-caption="Souls-like: testing character ability VFX and bounding box" data-lightbox data-full="assets/img/souls/souls-dash-vfx.jpg"></div>
+        <span class="label">Souls-like &middot; Character</span>
+      </div>
+      <div class="tile" data-cat="character">
+        <div class="media " data-src="assets/img/souls/souls-dodge-trace.jpg" data-label="Character trace debug" data-caption="Souls-like: trace visualization during character combat testing" data-lightbox data-full="assets/img/souls/souls-dodge-trace.jpg"></div>
+        <span class="label">Souls-like &middot; Character</span>
+      </div>
+      <div class="tile" data-cat="character">
+        <div class="media " data-src="assets/img/souls/souls-melee-combat.jpg" data-label="Character melee stance" data-caption="Souls-like: character melee attack in the test arena" data-lightbox data-full="assets/img/souls/souls-melee-combat.jpg"></div>
+        <span class="label">Souls-like &middot; Character</span>
+      </div>
+      <div class="tile" data-cat="character">
+        <div class="media " data-src="assets/img/souls/souls-hit-sparks.jpg" data-label="Character melee impact" data-caption="Souls-like: melee hit sparks and health bar feedback" data-lightbox data-full="assets/img/souls/souls-hit-sparks.jpg"></div>
+        <span class="label">Souls-like &middot; Character</span>
+      </div>
+      <div class="tile wide" data-cat="gameplay">
+        <div class="media " data-src="assets/img/souls/souls-combat-thumb.jpg" data-label="Souls-like combat" data-caption="Souls-like: combat test with attack effects" data-lightbox data-full="assets/img/souls/souls-combat.jpg"></div>
+        <span class="label">Souls-like &middot; Gameplay</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!--
+<section class="section" id="reel">
+  <div class="wrap">
+    <div class="section-head reveal"><h2>Demo reel</h2><p>A short look at both projects in motion.</p></div>
+    <div class="reveal"><div class="media " data-label="Demo reel: paste a YouTube link or an mp4 path" data-ratio="16:9" data-example="https://youtu.be/YOUR_VIDEO_ID  or  assets/video/reel.mp4"></div></div>
+  </div>
+</section>
+-->
+
+<section class="section" id="about">
+  <div class="wrap about">
+    <div class="reveal">
+      <div class="section-head"><h2>About me</h2></div>
+      <!-- EDIT: replace or extend these paragraphs with your own voice. -->
+      <p>I'm a Computational Media student at Georgia Tech with an Intelligence &amp; Games concentration, graduating Fall 2027. I like building the systems and spaces that make a game feel alive: enemy behavior, animation, and the environments players fight through.</p>
+      <p>My projects are built in Unreal Engine. I'm looking for a Summer 2027 internship in gameplay programming, AI, or design.</p>
+    </div>
+    <div class="reveal">
+      <div class="panel"><h3>Tools</h3><ul>
+        <li>Unreal Engine 5, Blueprints, Niagara</li>
+        <li>Mixamo, Fab asset packs</li>
+        <li>Python, Java, C++, Django</li>
+        <li>Git &amp; GitHub</li></ul></div>
+      <div class="panel"><h3>Education</h3><ul>
+        <li>Georgia Institute of Technology</li>
+        <li>B.S. Computational Media, Intelligence &amp; Games</li>
+        <li>Expected graduation: Fall 2027</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="section-head reveal"><h2>Contact</h2><p>The best ways to reach me.</p></div>
+    <div class="btn-row reveal">
+      <a class="btn" href="https://www.linkedin.com/in/adhvaith-bonaili-78b036336/" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/Frosty-Knight?tab=repositories" rel="noopener">GitHub</a>
+      <a class="btn ghost" href="assets/Adhvaith_Bonaili_Resume_V3.pdf" data-doc>Download resume</a>
+      <!-- To add email: <a class="btn ghost" href="mailto:you@example.com">Email me</a> -->
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year">2026</span> Adhvaith Bonaili</span>
+    <ul>
+      <li><a href="https://github.com/Frosty-Knight?tab=repositories" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/adhvaith-bonaili-78b036336/" rel="noopener">LinkedIn</a></li>
+      <li><a href="assets/Adhvaith_Bonaili_Resume_V3.pdf" data-doc>Resume (PDF)</a></li>
+    </ul>
+  </div>
+</footer>
+
+<dialog class="lb" id="lb" aria-label="Image viewer">
+  <div class="lb-inner">
+    <div class="lb-stage"></div>
+    <div class="lb-cap"></div>
+  </div>
+  <button class="x" aria-label="Close">&#10005;</button>
+  <button class="prev" aria-label="Previous">&#8592;</button>
+  <button class="next-b" aria-label="Next">&#8594;</button>
+</dialog>
+<script src="js/main.js"></script>
+</body>
+</html>
+```[cite: 14, 15]
+
+---
+
+### 2. `projects/arena-shooter.html`
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arena Shooter | Adhvaith Bonaili</title>
+<meta name="description" content="A solo first-person arena shooter in Unreal Engine 5, built on a course foundation and extended with my own arena, enemy waves, and weapon work.">
+<meta name="theme-color" content="#07161b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">

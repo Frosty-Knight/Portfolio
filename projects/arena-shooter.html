@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arena Shooter | Adhvaith Bonaili</title>
+<meta name="description" content="A solo first-person arena shooter in Unreal Engine 5, built on a course foundation and extended with my own arena, enemy waves, and weapon work.">
+<meta name="theme-color" content="#07161b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script>document.documentElement.className += " js";</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Adhvaith <span>Bonaili</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="pills">Menu</button>
+    <ul class="pills" id="pills">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="arena-shooter.html" aria-current="page">Arena Shooter</a></li>
+      <li><a href="souls-like.html">Souls-like</a></li>
+      <li><a href="../index.html#gallery">Gallery</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+<header class="proj-hero">
+  <div class="bg"><img src="../assets/img/arena/arena-overview-wide.jpg" alt=""></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="../index.html#work">&larr; All work</a></div>
+    <h1>Arena Shooter</h1>
+    <p class="lead">A solo first-person arena shooter in Unreal Engine 5, built on a course foundation and extended with my own arena, enemy waves, and weapon work.</p>
+    <dl class="meta"><div><dt>Role</dt><dd>Designer &amp; developer (solo)</dd></div><div><dt>Engine</dt><dd>Unreal Engine 5, Blueprints</dd></div><div><dt>Timeline</dt><dd>Dec. 2025 &ndash; Jan. 2026</dd></div><div><dt>Focus</dt><dd>Level design, enemy waves, weapons</dd></div></dl>
+  </div>
+</header>
+
+<div class="tabbar">
+  <div class="wrap">
+    <div class="tabs" role="tablist" aria-label="Project sections">
+      <button class="tab" role="tab" id="tab-environment" aria-controls="environment" aria-selected="true">Environment</button>
+      <button class="tab" role="tab" id="tab-influence" aria-controls="influence" aria-selected="false">Map &amp; Enemy Influence</button>
+      <button class="tab" role="tab" id="tab-gameplay" aria-controls="gameplay" aria-selected="false">Gameplay</button>
+      <button class="tab" role="tab" id="tab-technical" aria-controls="technical" aria-selected="false">Technical overview</button>
+    </div>
+  </div>
+</div>
+
+<div class="wrap panel-wrap">
+
+  <section class="tabpanel" id="environment" role="tabpanel" aria-labelledby="tab-environment" data-lbgroup>
+    <div class="intro">
+      <h2>Ruined Oasis Temple</h2>
+      <p>The assets used to design the temple came from a free Fab asset pack. The arena layout was created as a dynamic space with multiple spawns for enemies, as well as cover layouts corresponding to weapon spawns and behavior.</p>
+    </div>
+    <div class="grid2">
+      <div class="media full" data-src="assets/img/arena/arena-overview-wide.jpg" data-label="Arena overview" data-caption="The full arena from above" data-ratio="16:9" data-lightbox></div>
+      <div class="media " data-src="assets/img/arena/arena-overview-close.jpg" data-label="Arena close-up" data-caption="Ruins and bridges from above" data-lightbox></div>
+      <div class="media " data-src="assets/img/arena/arena-ground-level.jpg" data-label="Ground level" data-caption="Ground-level cover and the arched bridge" data-lightbox></div>
+      <div class="media full" data-src="assets/img/arena/arena-statue-courtyard.jpg" data-label="Courtyard" data-caption="The central statue courtyard" data-ratio="21:9" data-lightbox></div>
+    </div>
+  </section>
+
+  <section class="tabpanel" id="influence" role="tabpanel" aria-labelledby="tab-influence" data-lbgroup>
+    <div class="intro">
+      <h2>Level design and enemy behavior</h2>
+      <p>Elevators introduce a vertical element to the game, allowing for different angles and vantage points that trade cover for visibility. Spawn points were placed to ensure initial spawn safety and opportunities for quick weapon upgrades. Enemy AI uses a navmesh bounded by blocking volumes.</p>
+    </div>
+    <div class="grid2">
+      <div class="media" data-src="assets/video/arena-elevator-weapon-pickup.mp4" data-poster="assets/img/posters/arena-elevator-weapon-pickup.jpg" data-label="Elevator and weapon pickup" data-caption="Elevator mechanics and weapon pickup" data-ratio="16:9"></div>
+      <div class="media" data-src="assets/video/arena-spawn-score.mp4" data-poster="assets/img/posters/arena-spawn-score.jpg" data-label="Enemy spawning and score" data-caption="Enemy spawning and score" data-ratio="16:9"></div>
+      <div class="media" data-src="assets/video/arena-navmesh-invisible-walls.mp4" data-poster="assets/img/posters/arena-navmesh-invisible-walls.jpg" data-label="Navmesh and invisible walls" data-caption="Navmesh and invisible walls" data-ratio="16:9"></div>
+      <div class="media " data-src="assets/img/arena/arena-cover-blockout.jpg" data-label="Cover and sightline blockout" data-caption="Blockout layout showing cover placement and sightlines" data-lightbox></div>
+    </div>
+  </section>
+
+  <section class="tabpanel" id="gameplay" role="tabpanel" aria-labelledby="tab-gameplay" data-lbgroup>
+    <div class="intro">
+      <h2>Waves, cover, death, and weapon variety</h2>
+      <p>The dynamic enemy wave spawner ensures there is always a constant number of enemies on the field until that spawner runs out, balancing difficulty with fairness. Elevators and ramps are usable by both the player and AI. Weapon spawns are balanced by cover—more powerful weapons are placed in open spots near spawners, while weaker weapons are positioned in safer areas. Map cover was designed around weapon behavior to ensure balanced play.</p>
+    </div>
+    <div class="grid2">
+      <div class="media full" data-src="assets/video/arena-shoot-death.mp4" data-poster="assets/img/posters/arena-shoot-death.jpg" data-label="Shooting and enemy death" data-caption="Shooting and enemy death" data-ratio="16:9"></div>
+      <div class="media full" data-src="assets/img/arena/arena-gameplay-fps.jpg" data-label="Gameplay" data-caption="First-person view during play, with HUD and enemy state labels" data-ratio="16:9" data-lightbox></div>
+    </div>
+  </section>
+
+  <section class="tabpanel" id="technical" role="tabpanel" aria-labelledby="tab-technical">
+    <div class="doc">
+      <h3>Overview</h3>
+      <p>Arena Shooter started from a UE5 action-game course and the UE5 First-Person template. I used it as a technical foundation, then designed my own arena and extended the combat systems.</p>
+      <p>This project served as my foundational introduction to UE5, allowing me to learn the editor, modeling tools, basic AI behavior, materials, and Blueprints without diving into heavy C++ coding right away. It gave me the structure and guidance to ship a finished project while leaving plenty of room for creative expression.</p>
+
+      <h3>Systems I built</h3>
+      <ul><li>Enemy wave system</li><li>Multiple spawn points</li><li>Elevator mechanics</li><li>Cover placement planned around the weapon set</li></ul>
+
+      <h3>Design decisions</h3>
+      <div class="decisions">
+<div class="decision"><h4>Arena layout and cover placement</h4><dl>
+<dt>Decision</dt><dd>Structured the style, layout, and sightlines of the arena around specific weapon ranges and cover points.</dd>
+<dt>Why</dt><dd>I built a blockout first to test the layout for fairness against enemy behavior. The goal was to create a fast-paced, dynamic experience that prevented issues like spawn deaths or getting rushed by four enemies at once.</dd>
+<dt>Tradeoffs</dt><dd>Building a blockout first and layering environment assets over it significantly increased the time needed to complete the final map.</dd></dl></div>
+<div class="decision"><h4>Spawn points and wave pacing</h4><dl>
+<dt>Decision</dt><dd>Configured spawners to only spawn a new enemy once their previously spawned enemy was defeated.</dd>
+<dt>Why</dt><dd>This prevented the player from getting overrun and allowed individual spawners to be cleared at different times, rewarding tactical and thoughtful play.</dd>
+<dt>Tradeoffs</dt><dd>For balance reasons, I had to keep the spawners static. Given more time, I would like to implement dynamic spawners that relocate or beam enemies down from the sky.</dd></dl></div>
+</div>
+
+      <h3>What I built vs. what I adapted</h3>
+      <div class="split">
+        <div class="panel"><h3>Foundation</h3><ul><li>UE5 action-game YouTube tutorial and UE5 First-Person Shooter template (combat framework and animations)</li><li>Environment pieces from a Fab asset pack</li></ul></div>
+        <div class="panel"><h3>My own work</h3><ul><li>Arena layout, blockout, and cover placement</li><li>Multiple spawn points and elevator mechanics</li><li>Enemy wave system</li><li>Textures and assets sourced and applied</li></ul></div>
+      </div>
+
+      <h3>Design document</h3>
+      <p>In progress — full write-up and diagrams coming soon.</p>
+      <!-- Uncomment once the PDF is ready:
+      <p><a class="btn" href="../assets/docs/arena-shooter-design-doc.pdf" data-doc>Download design doc (PDF)</a></p>
+      -->
+    </div>
+  </section>
+
+  <div class="next">
+    <div><p class="kicker">Next project</p><h3>Souls-like Combat Prototype</h3></div>
+    <div class="btn-row"><a class="btn" href="souls-like.html">View project &rarr;</a><a class="btn ghost" href="../index.html#gallery">Back to gallery</a></div>
+  </div>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="year">2026</span> Adhvaith Bonaili</span>
+    <ul>
+      <li><a href="https://github.com/Frosty-Knight?tab=repositories" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/adhvaith-bonaili-78b036336/" rel="noopener">LinkedIn</a></li>
+      <li><a href="../assets/Adhvaith_Bonaili_Resume_V3.pdf" data-doc>Resume (PDF)</a></li>
+    </ul>
+  </div>
+</footer>
+
+<dialog class="lb" id="lb" aria-label="Image viewer">
+  <div class="lb-inner">
+    <div class="lb-stage"></div>
+    <div class="lb-cap"></div>
+  </div>
+  <button class="x" aria-label="Close">&#10005;</button>
+  <button class="prev" aria-label="Previous">&#8592;</button>
+  <button class="next-b" aria-label="Next">&#8594;</button>
+</dialog>
+<script src="../js/main.js"></script>
+</body>
+</html>
